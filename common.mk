@@ -21,3 +21,5 @@ PRODUCT_BOOT_JARS += \
 
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += hardware/nothing/sepolicy/vendor
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += hardware/nothing/sepolicy/public
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += hardware/nothing/sepolicy/private
