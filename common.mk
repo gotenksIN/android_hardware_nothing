@@ -33,3 +33,6 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += hardware/nothing/sepolicy/private
 # Thermal
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.sys.sltntc.enable=1
+
+# Proprietary files
+$(call inherit-product-if-exists, vendor/nothing/common/common-vendor.mk)
