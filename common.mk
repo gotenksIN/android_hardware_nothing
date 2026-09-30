@@ -8,6 +8,10 @@
 PRODUCT_SOONG_NAMESPACES += \
     hardware/nothing
 
+# Dirac
+PRODUCT_PACKAGES += \
+    DiracService
+
 # Nothing framework
 PRODUCT_PACKAGES += \
     nothing-fwk
