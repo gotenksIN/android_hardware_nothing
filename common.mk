@@ -7,3 +7,10 @@
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     hardware/nothing
+
+# Nothing framework
+PRODUCT_PACKAGES += \
+    nothing-fwk
+
+PRODUCT_BOOT_JARS += \
+    nothing-fwk
