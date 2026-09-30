@@ -12,6 +12,12 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     DiracService
 
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.newdirac.dump=0 \
+    persist.vendor.newdirac.enable.value=1.000000 \
+    persist.vendor.newdirac.volume.value=0.000000 \
+    persist.vendor.newdirac.cur.config=MUSIC
+
 # Nothing framework
 PRODUCT_PACKAGES += \
     nothing-fwk
@@ -23,3 +29,7 @@ PRODUCT_BOOT_JARS += \
 BOARD_VENDOR_SEPOLICY_DIRS += hardware/nothing/sepolicy/vendor
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += hardware/nothing/sepolicy/public
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += hardware/nothing/sepolicy/private
+
+# Thermal
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.sys.sltntc.enable=1
