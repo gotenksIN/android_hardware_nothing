@@ -18,3 +18,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     nothing-fwk
+
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += hardware/nothing/sepolicy/vendor
